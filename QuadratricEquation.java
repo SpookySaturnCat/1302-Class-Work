@@ -13,9 +13,7 @@ public class QuadratricEquation {
 	// Default no args constructor
 	public QuadratricEquation() {
 		
-		setA(2);
-		setB(4);
-		setC(5);
+		this(10, 66, 77);
 	}
 
 	// Convience constructor
