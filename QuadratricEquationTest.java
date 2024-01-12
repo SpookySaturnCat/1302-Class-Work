@@ -30,6 +30,7 @@ public class QuadratricEquationTest {
 
 			j++; // Incriment j for print statement
 		}
+
 		// Create equation object and variables from the instance
 		QuadratricEquation equation = new QuadratricEquation(userValues[0], userValues[1], userValues[2]);
 		double discriminat = equation.getDiscriminant(), root1 = equation.getRoot1();
@@ -42,7 +43,7 @@ public class QuadratricEquationTest {
 		} else {
 			message = "The equation has no roots\n";
 		}
-		
+
 		System.out.print(message);
 	}
 }
