@@ -38,7 +38,7 @@ public class QuadratricEquation {
 		return (getDiscriminant() > 0) ? (-getB() + Math.sqrt(getDiscriminant())) / (2 * getA()) : 0;
 	}
 
-	// Returns the seconf root of the equation
+	// Returns the second root of the equation
 	public double getRoot2() {
 
 		return (getDiscriminant() > 0) ? (-getB() - Math.sqrt(getDiscriminant())) / (2 * getA()) : 0;
