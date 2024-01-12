@@ -1,10 +1,10 @@
-
 /*
  *  File: QuadraticEquationTest.java
  *  Author: Seraphina Morrison
  *  Created: 01/11/2023
  *  Description: Exercise 9.10 from the book
  */
+
 import java.util.Scanner;
 
 public class QuadratricEquationTest {
