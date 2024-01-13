@@ -8,13 +8,11 @@
 public class StopWatchTest {
 
 	public static void main(String[] args) {
-
 		// Create array that holds 100,000 numbers
 		int[] arr = new int[100000];
 
 		// For loop to populate array
 		for (int i = 0; i < arr.length; i++) {
-
 			// Creates a random number to populate array with
 			arr[i] = (int) Math.floor(Math.random() * arr.length);
 		}
@@ -32,7 +30,6 @@ public class StopWatchTest {
 	}
 
 	public static void selectionSort(int[] arr) {
-
 		// Create temp value
 		int temp;
 		

@@ -6,20 +6,17 @@
  */
 
 public class QuadratricEquation {
-
 	// Data members
 	private double a, b, c;
 
 	// Default no args constructor
 	public QuadratricEquation() {
-		
 		// Calls convienece constructor
 		this(10, 66, 77);
 	}
 
 	// Convience constructor
 	public QuadratricEquation(double a, double b, double c) {
-		
 		// Sets passed values
 		setA(a);
 		setB(b);

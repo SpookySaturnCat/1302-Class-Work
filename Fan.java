@@ -6,7 +6,6 @@
  */
 
 public class Fan {
-
 	// Required data members
 	public static final int SLOW = 1, Medium = 2, Fast = 3;
 	private int speed;
@@ -16,7 +15,6 @@ public class Fan {
 	
 	// Default no-args constructor
 	public Fan() {
-		
 		// Required default values
 		setSpeed(SLOW);
 		setOn(false);
@@ -26,7 +24,6 @@ public class Fan {
 	
 	// Required method
 	public String toString(){
-		
 		// Create formatted String with required information based on conditions
 		String info = (isOn() ? "Speed: " + getSpeed() + "\n" : "Fan is off\n")
 				+ "Color: " + getColor() + "\nRadius: " + getRadius() + "\n";

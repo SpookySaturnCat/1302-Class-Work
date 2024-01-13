@@ -6,13 +6,11 @@
  */
 
 public class StopWatch {
-
 	// Private data members
 	private double startTime, endTime;
 
 	// Default no-args constructor
 	public StopWatch() {
-
 		setStartTime(System.currentTimeMillis());
 		setEndTime(getStartTime());
 	}

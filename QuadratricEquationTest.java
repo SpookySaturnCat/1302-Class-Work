@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class QuadratricEquationTest {
 
 	public static void main(String[] args) {
-
 		// Create array to store values
 		double[] userValues = new double[3];
 
@@ -23,7 +22,6 @@ public class QuadratricEquationTest {
 
 		// For loop to display and store for a, b, and c
 		for (int i = 0; i < userValues.length; i++) {
-
 			// Prompt and store for data
 			System.out.printf("Please enter the value integer values for %c: ", j);
 			userValues[i] = input.nextDouble();

@@ -8,7 +8,6 @@
 public class FanTest {
 
 	public static void main(String[] args) {
-
 		// Create two fan objects
 		Fan fan1 = new Fan();
 		Fan fan2 = new Fan();
@@ -18,12 +17,9 @@ public class FanTest {
 		fan1.setColor("yellow");
 		fan1.setRadius(10.0);
 		fan1.setOn(true);
-		
 		fan2.setSpeed(2);
 		
 		// Print results
 		System.out.println(fan1.toString() + "\n" + fan2.toString());
-		
 	}
-
 }
