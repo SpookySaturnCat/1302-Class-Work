@@ -63,4 +63,8 @@ public class Account {
 	public double getMonthlyIntrestRate() {
 		return getAnnualIntrestRate() / 12.0;
 	}
+	
+	public double getMonthlyIntrest() {
+		return balance * getMonthlyIntrestRate();
+	}
 }
