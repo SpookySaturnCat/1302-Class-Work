@@ -47,27 +47,29 @@ public class ATMGame {
 
 		switch (choice) {
 		case 1:
-			displayBalance(idNumber, accounts);
+			// Prints balance
+			System.out.print(accounts[idNumber].getBalance() + "\n");
 			break;
 		case 2:
+			// Withdraws from account
 			char transactionType = 'w';
-			displayBalance(idNumber, accounts);
 			displayWithdrawOrDeposit(input, idNumber, accounts, transactionType);
 			break;
 		case 3:
+			// Deposits to account
 			transactionType = 'd';
-			displayBalance(idNumber, accounts);
 			displayWithdrawOrDeposit(input, idNumber, accounts, transactionType);
 			break;
 		case 4:
+			// Exits account and allows for new account to be acsessed
 			idNumber = getIdNumber(input);
 			displayMenu(input, idNumber, accounts);
+			break;
+		default: 
+			// Prinrs error message and restarts the menu
+			System.out.println("Invalid entry, please try again.");
+			displayMenu(input, idNumber, accounts);
 		}
-	}
-
-	// Displays the balance of the account
-	public static void displayBalance(int idNumber, Account[] accounts) {
-		System.out.print(accounts[idNumber].getBalance() + "\n");
 	}
 
 	public static void displayWithdrawOrDeposit(Scanner input, int idNumber, Account[] accounts, char transactionType) {
