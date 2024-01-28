@@ -1,29 +1,10 @@
+package atmgame;
+
 import java.util.Scanner;
 
 public class ATMGame {
-	public static void main(String[] args) {
-		// Create and initilize sentinal
-		int idNumber = 3;
-
-		// Create Scanner object and array of accounts
-		Scanner input = new Scanner(System.in);
-		Account[] accounts = new Account[10];
-
-		// Populates array
-		for (int i = 0; i < accounts.length; i++) {
-			accounts[i] = new Account(i, 100);
-		}
-
-		// Set the idNumber
-		idNumber = getIdNumber(input);
-		do {
-			// Display main menu
-			displayMenu(input, idNumber, accounts);
-		} while (idNumber != 672);
-	}
-
+	
 	public static int getIdNumber(Scanner input) {
-
 		int idNumber = 0;
 		// Do while to get user to enter if for program
 		do {
@@ -48,7 +29,7 @@ public class ATMGame {
 		switch (choice) {
 		case 1:
 			// Prints balance
-			System.out.print(accounts[idNumber].getBalance() + "\n");
+			System.out.print("$" + accounts[idNumber].getBalance() + "\n");
 			break;
 		case 2:
 			// Withdraws from account
@@ -65,7 +46,7 @@ public class ATMGame {
 			idNumber = getIdNumber(input);
 			displayMenu(input, idNumber, accounts);
 			break;
-		default: 
+		default:
 			// Prinrs error message and restarts the menu
 			System.out.println("Invalid entry, please try again.");
 			displayMenu(input, idNumber, accounts);

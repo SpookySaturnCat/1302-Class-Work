@@ -1,3 +1,5 @@
+package atmgame;
+
 import java.util.Date;
 
 public class Account {
@@ -26,12 +28,12 @@ public class Account {
 	public void withdraw(double amount) {
 		setBalance(getBalance() - amount);
 	}
-	
+
 	public void deposit(double amount) {
 		setBalance(getBalance() + amount);
-	} 
-	
-	// Acsessors and mutators 
+	}
+
+	// Acsessors and mutators
 	public int getId() {
 		return id;
 	}
@@ -63,7 +65,7 @@ public class Account {
 	public double getMonthlyIntrestRate() {
 		return getAnnualIntrestRate() / 12.0;
 	}
-	
+
 	public double getMonthlyIntrest() {
 		return balance * getMonthlyIntrestRate();
 	}
