@@ -1,3 +1,15 @@
-Hello!
-Welcome to the coffee shop game
-Yay!
+--
+Hello! --
+We heard you would like a job? --
+Good news for you, we have an opening!  --
+Come in tomorrow at 6 AM. --
+We can do a test run and see if you're cut out for it. --
+What? --
+You didn't think the barista life would be simple did you? --
+--
+--
+UnNamed Coffee Shop Game --
+Intro text here --
+and here --
+and so on --
+--
