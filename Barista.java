@@ -7,6 +7,7 @@ public class Barista extends Person{
 	// Data members
 	private int level;
 	
+	
 	// Default no-args constructor
 	public Barista() {
 		super("Marciline", 22);
