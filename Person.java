@@ -10,10 +10,12 @@ public class Person {
 	public Person() {
 		setName("Stu Macher");
 		setAge(18);
+		setFavoriteDrink(new Drink());
 	}
 	
 	// Convenience constructor
 	public Person(String name, int age) {
+		this();
 		setName(name);
 		setAge(age);
 	}
