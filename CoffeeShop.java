@@ -28,11 +28,11 @@ public class CoffeeShop {
 	
 	// Fucked up 
 	public void welcome() throws IOException {
-		File file = new File("welcome.txt");
+		File file = new File("src/coffeeshop/welcome.txt");
 		Scanner input = new Scanner(file);
 		
 		while(input.hasNext()) {
-			String line = input.nextLine();
+			String line = input.next();
 			System.out.println(line);
 		}
 		input.close();
