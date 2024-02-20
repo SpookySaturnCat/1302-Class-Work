@@ -15,15 +15,16 @@ public class CoffeeShopTest {
 		CoffeeShop game = new CoffeeShop();
 		Barista user = game.playerSetUp();
 		
-		// Test
-		System.out.println(user.getName());
-		
 		// Idk if this is right??
 		try {
 			game.welcome();
 		} catch (IOException e) {
 			System.out.println("yikes!");
-			//e.printStackTrace();
+			// e.printStackTrace();
 		}
+		
+		// Testing
+		game.saveFile(user);
+		System.out.println(true); // Prints if saveFile works
 	}
 }
