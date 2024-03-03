@@ -1,0 +1,17 @@
+Caramel Coffee
+Price: 1.50
+^Coffee Grounds
+^Water
+^Caramel Syrup
+^Milk
+
+Matcha Latte
+Price: 3.00
+^Milk
+^Matcha Powder
+^Vanilla Syrup
+
+Black Coffee
+Price: 1.50
+^Coffee Grounds
+^Water
