@@ -45,67 +45,71 @@ public class Drink {
 
 	// Method that creates a drink by taking in a name and reading from text file
 	public Drink createDrink(String name) {
-		// Create file object 
+		// Create file object
 		File drinkInfo = new File("src/coffeeshop/DrinkInfo.txt");
-		
+
 		// Recreate data members within method
 		String line = "";
 		double price = 0;
 		ArrayList<String> ingredientList = new ArrayList<>();
-		
+
 		// Create a Scanner object with resources
 		try (Scanner input = new Scanner(drinkInfo);) {
-			
+
 			// While loop that runs while the file has contents
 			while (input.hasNext()) {
 				// Extracts the next line
 				line = input.nextLine();
-				
+
 				// If we are on the correct drink this if statement runs
 				if (line.equalsIgnoreCase(name)) {
 					// Goes to the next String which should be "Price: "
 					line = input.next();
-					
+
 					// If the file is in the correct formatting this block should execute
 					if (line.equalsIgnoreCase("Price:")) {
 						// Gets the next String
 						line = input.next();
-						
+
 						// Extracts the double value from the String
 						price = Double.parseDouble(line);
-						
+
 						// Clears queue then extracts next line
 						input.nextLine();
 						line = input.nextLine();
-						
+
 						// If "^" is in the next line
 						while (line.contains("^")) {
 							// Removes the first index (which is "^") and stores
 							line = line.substring(1);
-							
+
 							// Adds to ArrayList then extracts next line
 							ingredientList.add(line);
-							line = input.nextLine();
+							if (input.hasNext()) {
+								line = input.nextLine();
+							}
 						}
 					}
 				}
-				/* Would this be an appropriate place to use break?
-				 The loop will keep going until the contents of the 
-				 file have all been read through, and that does not
-				 seem too efficient */
+				/*
+				 * Would this be an appropriate place to use break? The loop will keep going
+				 * until the contents of the file have all been read through, and that does not
+				 * seem too efficient
+				 */
 			}
 		} catch (FileNotFoundException ex) {
 			ex.printStackTrace();
 		}
-		
+
 		// Creates new drink object with values extracted from file
 		Drink newDrink = new Drink(name, price, ingredientList);
-		
+
 		return newDrink;
 	}
-	
+
 	public String toString() {
-		String message = String.format("Name:         %s\nPrice:        $%,.2f\n\nIngredients:  %s\n", getName(), getPrice(), getIngredientList().get(0));
+		String message = String.format("Name:         %s\nPrice:        $%,.2f\n\nIngredients:  %s\n", getName(),
+				getPrice(), getIngredientList().get(0));
 
 		// Loop to extract all contents of array and add them to the message
 		for (int i = 1; i < getIngredientList().size(); i++) {

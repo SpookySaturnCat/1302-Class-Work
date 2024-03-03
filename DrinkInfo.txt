@@ -15,3 +15,8 @@ Black Coffee
 Price: 1.50
 ^Coffee Grounds
 ^Water
+
+Green Tea
+Price: 1.50
+^Green Tea
+^Water

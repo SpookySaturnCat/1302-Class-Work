@@ -24,4 +24,13 @@ public class Utilities {
 		// Return the word
 		return word;
 	}
+	
+	public int getConstrainedRandomInt(int limit) {
+		int randomNumber = (int) ((Math.random() * 100) + 1);	
+		if (randomNumber != 0) {
+		return randomNumber % limit;
+		} else {
+			return 0;
+		}
+	}
 }
