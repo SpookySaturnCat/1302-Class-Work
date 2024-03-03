@@ -1,4 +1,4 @@
-Name: Seraphina
-Age: 21
+Name: s
+Age: 2
 Level: 1
 Favorite drink: Black Coffee
