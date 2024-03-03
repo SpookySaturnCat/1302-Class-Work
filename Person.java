@@ -25,6 +25,9 @@ public class Person {
 		setFavoriteDrink(favoriteDrink);
 	}
 	
+	public String toString() {
+		return String.format("Name: %s\nAge: %d\nFavorite drink:\n%s", getName(), getAge(), getFavoriteDrink());
+	}
 	// Acsessors and mutators
 	public String getName() {
 		return name;

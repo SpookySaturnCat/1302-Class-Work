@@ -11,20 +11,15 @@ import java.util.Scanner;
 
 public class CoffeeShopTest {
 	public static void main(String[] args) {
-		// Create instances of the game and barista
-		CoffeeShop game = new CoffeeShop();
+		// Will not need game object soon
+		Game game = new Game();
+		Drink drink = new Drink();
 		Barista user = game.playerSetUp();
 		
-		// Idk if this is right??
-		try {
-			game.welcome();
-		} catch (IOException e) {
-			System.out.println("yikes!");
-			// e.printStackTrace();
-		}
+		Drink caramelCoffee = drink.createDrink("Caramel Coffee");
+		Drink matchaLatte = drink.createDrink("Matcha Latte");
 		
-		// Testing
-		game.saveFile(user);
-		System.out.println(true); // Prints if saveFile works
+		
+
 	}
 }
